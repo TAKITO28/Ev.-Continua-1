@@ -4,7 +4,7 @@ class Usuario:
     self._id_usuario = id_usuario
     self._membresia_activa = True
     self._tarifa_multa = tarifa_multa_dia
-    self._hisstorial_prestamos = []
+    self._historial_prestamos = []
 
   def get_nombre(self) -> str:
     return self._nombre

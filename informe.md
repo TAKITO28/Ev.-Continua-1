@@ -8,7 +8,7 @@ Se simula una biblioteca pequeña. Hay **libros** que pueden estar disponibles o
 
 Se aplican los conceptos de POO pedidos: clases, objetos, constructores, métodos, encapsulamiento (atributos privados con getters en todas las clases), herencia (`PrestamoEstudiante` hereda de `Prestamo`) y relaciones entre objetos. Los datos se guardan en listas y diccionarios.
 
-El sistema está completo en un solo archivo, `menu1.py`, que se ejecuta con `python menu1.py`.
+El código está completo en un solo archivo, `menu1.py`, que se ejecuta con `python menu1.py`. El repositorio incluye además `prueba_multas.py` y `ejecucion_prueba.txt`, que documentan las pruebas.
 
 ## Diagrama de clases
 
@@ -160,15 +160,18 @@ El menú valida las entradas: IDs y códigos duplicados, elementos inexistentes,
 
 ## 5. Ejecución de prueba
 
-Se registran los libros *Don Quijote* (L1) e *Ilíada* (L2) y los usuarios Ana (U1) y Luis (U2). Luego:
+El archivo [`ejecucion_prueba.txt`](ejecucion_prueba.txt) contiene el registro completo de una sesión real del menú, con las respuestas escritas en cada paso. Se ejecutó con `python menu1.py` y comprueba estas funcionalidades:
 
-1. Ana toma *Don Quijote* como préstamo normal. Recibe el préstamo P001 con vencimiento a 7 días.
-2. Luis toma *Ilíada* como estudiante de Ingeniería. Recibe el préstamo P002 con 14 días.
-3. Se extiende P001 dos veces (+3 días y +1 día). El vencimiento pasa del 24 al 27 y luego al 28 de octubre de 2026. Un tercer intento es rechazado, porque un préstamo normal admite 2 extensiones.
-4. Se consulta el ticket de P002.
-5. Se devuelven ambos libros. Como la devolución ocurre el mismo día, no hay multa.
+1. **Registro:** se crean los libros *Don Quijote* (L1) e *Ilíada* (L2) y los usuarios Ana (U1) y Luis (U2), y se listan.
+2. **Préstamo normal:** Ana toma *Don Quijote* y recibe el préstamo P001 con vencimiento a 7 días.
+3. **Validación de disponibilidad:** cuando Luis intenta tomar el mismo libro, el sistema responde que no está disponible.
+4. **Préstamo de estudiante:** Luis toma *Ilíada* como estudiante de Ingeniería y recibe el préstamo P002 con 14 días de plazo.
+5. **Extensiones:** P001 se extiende dos veces (+3 y +1 días) y un tercer intento es rechazado, porque un préstamo normal admite solo 2.
+6. **Consultas:** ticket de P002, multa por 6 días de retraso (S/ 15.00) e historial de Ana.
+7. **Devoluciones:** se devuelven ambos libros, que vuelven a figurar como disponibles. Al devolver el mismo día no hay multa.
+8. **Entrada inválida:** una opción inexistente del menú es rechazada sin cerrar el programa.
 
-Fragmento del ticket de P002:
+Fragmento del ticket de P002 tomado de ese registro:
 
 ```
 ==============================
@@ -177,18 +180,21 @@ Fragmento del ticket de P002:
 N° de prestamo: P002
 Usuario: Luis
 Libro: Ilíada
-Fecha de prestamo: 2026-10-17
-Fecha limite: 2026-10-31
+Fecha de prestamo: 2026-10-18
+Fecha limite: 2026-11-01
 Estado: Activo
 ==============================
 Tipo: Prestamo de estudiante
 Carrera: Ingeniería
 ```
 
-**Prueba de multas.** El menú no puede esperar días reales, así que las multas se comprobaron con un script aparte que retrasa la fecha límite 6 días:
+**Prueba de multas.** El menú no puede esperar días reales, así que las multas se comprueban con el script [`prueba_multas.py`](prueba_multas.py), que retrasa la fecha límite 6 días y verifica los montos con `assert`:
 
 - Préstamo normal: 6 × S/ 2.50 = **S/ 15.00**.
 - Préstamo de estudiante: 15.00 / 2 = **S/ 7.50**.
+- Devolución a tiempo: **sin multa**.
+
+Se ejecuta con `python prueba_multas.py`.
 
 ## 6. Conclusión
 

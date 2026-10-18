@@ -1,0 +1,460 @@
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 1
+Título: Don Quijote
+Autor: Cervantes
+Código: L1
+  Libro registrado.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 1
+Título: Ilíada
+Autor: Homero
+Código: L2
+  Libro registrado.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 2
+Nombre: Ana
+ID: U1
+  Usuario registrado.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 2
+Nombre: Luis
+ID: U2
+  Usuario registrado.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 3
+  Libro: Don Quijote | Autor: Cervantes | Código: L1 | Disponible
+  Libro: Ilíada | Autor: Homero | Código: L2 | Disponible
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 4
+  Usuario: Ana | ID: U1 | Membresía: Activa
+  Usuario: Luis | ID: U2 | Membresía: Activa
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 5
+Código del libro: L1
+  'Don Quijote' está disponible.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 6
+ID del usuario: U1
+Código del libro: L1
+El libro 'Don Quijote' ha sido prestado.
+¿Es estudiante? (s/n): n
+Préstamo registrado exitosamente en el historial de Ana.
+==============================
+      TICKET DE PRESTAMO
+==============================
+N° de prestamo: P001
+Usuario: Ana
+Libro: Don Quijote
+Fecha de prestamo: 2026-10-18
+Fecha limite: 2026-10-25
+Estado: Activo
+==============================
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 6
+ID del usuario: U2
+Código del libro: L1
+El libro 'Don Quijote' no está disponible.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 5
+Código del libro: L1
+  'Don Quijote' está prestado.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 6
+ID del usuario: U2
+Código del libro: L2
+El libro 'Ilíada' ha sido prestado.
+¿Es estudiante? (s/n): s
+Carrera: Ingeniería
+Préstamo registrado exitosamente en el historial de Luis.
+==============================
+      TICKET DE PRESTAMO
+==============================
+N° de prestamo: P002
+Usuario: Luis
+Libro: Ilíada
+Fecha de prestamo: 2026-10-18
+Fecha limite: 2026-11-01
+Estado: Activo
+==============================
+Tipo: Prestamo de estudiante
+Carrera: Ingeniería
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 8
+  1. [P001] Don Quijote -> Ana
+  2. [P002] Ilíada -> Luis
+Número de préstamo: 1
+Días extra: 3
+Plazo extendido. Nueva fecha limite: 2026-10-28
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 8
+  1. [P001] Don Quijote -> Ana
+  2. [P002] Ilíada -> Luis
+Número de préstamo: 1
+Días extra: 1
+Plazo extendido. Nueva fecha limite: 2026-10-29
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 8
+  1. [P001] Don Quijote -> Ana
+  2. [P002] Ilíada -> Luis
+Número de préstamo: 1
+Días extra: 2
+Ya no puedes extender mas este prestamo.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 9
+  1. [P001] Don Quijote -> Ana
+  2. [P002] Ilíada -> Luis
+Número de préstamo: 2
+==============================
+      TICKET DE PRESTAMO
+==============================
+N° de prestamo: P002
+Usuario: Luis
+Libro: Ilíada
+Fecha de prestamo: 2026-10-18
+Fecha limite: 2026-11-01
+Estado: Activo
+==============================
+Tipo: Prestamo de estudiante
+Carrera: Ingeniería
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 11
+ID del usuario: U1
+Días de retraso: 6
+  Multa: S/ 15.00
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 10
+ID del usuario: U1
+
+Historial de préstamos realizados de Ana:
+ Total de préstamos realizados: 1
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 7
+  1. [P001] Don Quijote -> Ana
+  2. [P002] Ilíada -> Luis
+Número de préstamo: 1
+El libro 'Don Quijote' ha sido devuelto.
+Libro devuelto a tiempo, sin multa.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 7
+  1. [P002] Ilíada -> Luis
+Número de préstamo: 1
+El libro 'Ilíada' ha sido devuelto.
+Libro devuelto a tiempo, sin multa.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 5
+Código del libro: L1
+  'Don Quijote' está disponible.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 99
+  Opción no válida.
+
+===== BIBLIOTECA =====
+  1. Registrar libro
+  2. Registrar usuario
+  3. Listar libros
+  4. Listar usuarios
+  5. Verificar disponibilidad de un libro
+  6. Prestar libro
+  7. Devolver libro (finalizar préstamo)
+  8. Extender plazo de un préstamo
+  9. Ver ticket de un préstamo
+ 10. Historial de un usuario
+ 11. Calcular multa
+ 12. Renovar membresía
+  0. Salir
+Elige una opción: 0
+¡Hasta luego!

@@ -6,9 +6,67 @@ Evaluación Grupal 1 – Lenguaje de Programación II (2026-2)
 
 Se simula una biblioteca pequeña. Hay **libros** que pueden estar disponibles o prestados, **usuarios** con una membresía y una tarifa de multa por día de retraso, y **préstamos** que relacionan a un usuario con un libro durante un plazo de días. Los préstamos pueden ser normales o de **estudiante**, con más días de plazo, más extensiones y multa reducida a la mitad. Todo se maneja desde un menú interactivo en consola.
 
-Se aplican los conceptos de POO pedidos: clases, objetos, constructores, métodos, encapsulamiento (atributos privados con getters en todas las clases), herencia (`PrestamoEstudiante` hereda de `Prestamo`) y relaciones entre objetos. Los datos se guardan en listas y diccionarios.git push origin main
+Se aplican los conceptos de POO pedidos: clases, objetos, constructores, métodos, encapsulamiento (atributos privados con getters en todas las clases), herencia (`PrestamoEstudiante` hereda de `Prestamo`) y relaciones entre objetos. Los datos se guardan en listas y diccionarios.
 
 El sistema está completo en un solo archivo, `menu1.py`, que se ejecuta con `python menu1.py`.
+
+## Diagrama de clases
+
+```mermaid
+classDiagram
+    class Libro {
+        -str _titulo
+        -str _autor
+        -str _codigo
+        -bool _disponible
+        -int _veces_prestado
+        +verificar_disponibilidad() bool
+        +prestar_libro() bool
+        +devolver_libro() bool
+    }
+    class Usuario {
+        -str _nombre
+        -str _id_usuario
+        -bool _membresia_activa
+        -float _tarifa_multa
+        -list _historial_prestamos
+        +registrar_prestamos(prestamo)
+        +calcular_multa(dias_retraso) float
+        +renovar_membresia()
+        +mostrar_historial()
+    }
+    class Prestamo {
+        -id _id_prestamo
+        -date _fecha_prestamo
+        -date _fecha_limite
+        -date _fecha_devolucion
+        -int _extensiones
+        -int _max_extensiones
+        -bool _activo
+        +generar_ticket()
+        +extender_plazo(dias_extra) bool
+        +finalizar_prestamo() float
+    }
+    class PrestamoEstudiante {
+        -str _carrera
+        +generar_ticket()
+        +finalizar_prestamo() float
+    }
+    class Biblioteca {
+        -dict _libros
+        -dict _usuarios
+        -list _prestamos
+        -int _contador_prestamos
+        +ejecutar()
+    }
+    Prestamo <|-- PrestamoEstudiante : hereda
+    Prestamo --> Usuario : pertenece a
+    Prestamo --> Libro : presta
+    Usuario o-- Prestamo : historial
+    Biblioteca o-- Libro
+    Biblioteca o-- Usuario
+    Biblioteca o-- Prestamo
+```
 
 ## 2. Clases, atributos y métodos
 

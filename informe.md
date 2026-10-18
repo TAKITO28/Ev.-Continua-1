@@ -57,6 +57,18 @@ classDiagram
         -dict _usuarios
         -list _prestamos
         -int _contador_prestamos
+        +registrar_libro()
+        +registrar_usuario()
+        +listar_libros()
+        +listar_usuarios()
+        +verificar_disponibilidad()
+        +prestar()
+        +devolver()
+        +extender()
+        +ver_ticket()
+        +historial_usuario()
+        +renovar_membresia()
+        +calcular_multa()
         +ejecutar()
     }
     Prestamo <|-- PrestamoEstudiante : hereda

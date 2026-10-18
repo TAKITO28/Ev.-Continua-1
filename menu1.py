@@ -4,7 +4,7 @@ Sistema de gestión de biblioteca: clases y menú interactivo en un solo archivo
 Clases:
     Libro, Usuario, Prestamo, PrestamoEstudiante (herencia) y Biblioteca (menú).
 
-Ejecutar con:  python biblioteca_completa.py
+Ejecutar con:  python menu1.py
 """
 from datetime import date, timedelta
 
